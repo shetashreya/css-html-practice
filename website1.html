@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-like Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Resetting Default Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1rem;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #444;
+        }
+
+        main {
+            padding: 10rem 0 5rem;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 1rem;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            background-color: #fff;
+            margin-top: 80px;
+        }
+
+        .product-card {
+            padding: 1rem;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-title {
+            font-weight: bold;
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .product-price {
+            color: #4caf50;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-button:hover {
+            background-color: #3e8e41;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 5rem;
+        }
+
+        .custom-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product-card {
+            padding: 1rem;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card {
+            padding: 1rem;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            /* Changed shadow color and opacity */
+        }
+
+        .product-card {
+            padding: 1rem;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <div class="product-card">
+                <img src="img/ws1.jpg" alt="Product 1" class="product-image custom-img">
+                <h3 class="product-title">Product 1</h3>
+                <p class="product-price">$100</p>
+                <button class="product-button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/ws2.jpg" alt="Product 2" class="product-image custom-img">
+                <h3 class="product-title">Product 2</h3>
+                <p class="product-price">$100</p>
+                <button class="product-button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/ws3.jpg" alt="Product 3" class="product-image custom-img">
+                <h3 class="product-title">Product 3</h3>
+                <p class="product-price">$100</p>
+                <button class="product-button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/ws4.jpg" alt="Product 4" class="product-image custom-img">
+                <h3 class="product-title">Product 4</h3>
+                <p class="product-price">$100</p>
+                <button class="product-button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/ws5.jpg" alt="Product 5" class="product-image custom-img">
+                <h3 class="product-title">Product 5</h3>
+                <p class="product-price">$100</p>
+                <button class="product-button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/ws6.jpg" alt="Product 6" class="product-image custom-img">
+                <h3 class="product-title">Product 6</h3>
+                <p class="product-price">$100</p>
+                <button class="product-button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/ws7.jpg" alt="Product 7" class="product-image custom-img">
+                <h3 class="product-title">Product 7</h3>
+                <p class="product-price">$100</p>
+                <button class="product-button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/ws8.jpg" alt="Product 8" class="product-image custom-img">
+                <h3 class="product-title">Product 8</h3>
+                <p class="product-price">$100</p>
+                <button class="product-button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/ws9.jpg" alt="Product 9" class="product-image custom-img">
+                <h3 class="product-title">Product 9</h3>
+                <p class="product-price">$100</p>
+                <button class="product-button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/ws10.jpg" alt="Product 10" class="product-image custom-img">
+                <h3 class="product-title">Product 10</h3>
+                <p class="product-price">$100</p>
+                <button class="product-button">Add to Cart</button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
